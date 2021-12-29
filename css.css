@@ -1,0 +1,358 @@
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  width: 70%;
+  display:flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  margin: 20px auto;
+  gap: 25px;
+}
+.note {
+  color: crimson;
+  /* background-color: darkblue; */
+  font-size: 17px;
+  padding: 5px;
+}
+    .container .Code{
+      width: 100%;
+      height: 40px;
+      font-size: 18px;
+      color: #ff00e5;
+      text-align: center;
+      padding: 7px;
+      background-color: #e7efff;
+      border-radius: 15px;
+      cursor: pointer;
+      border: none;
+      border-bottom: 2px solid black;
+      margin: 0px auto;
+      margin-top: -15px;
+      line-height: 23px;
+    } 
+
+    .container .Code::selection{
+      background-color:  rgba(148, 0, 246 , 0.5);
+    }
+    .container .Code:hover{
+      background-color: black; color: crimson;
+    }
+
+    .container  .generate , .container .generate_many{
+      font-size: 25px;
+      width: fit-content; height: 50px;
+      text-align: center;
+      color: navy;
+      padding: 10px;
+      background-color: #ffF;
+      /* background-color: blue;  */
+      cursor: pointer;
+      border-radius: 15px;
+      border: none;
+      font-size: 25px;
+      border-bottom: 2px solid red;
+      color: blue;
+      margin-top: -12px;
+    }
+    .container  .generate:hover ,  .container .generate_many:hover {
+      background-color: black;
+    }
+
+    .container div {
+/* background-color: blue;  */
+width: 90%;
+    }
+
+    .container div .characters {
+      
+      padding: 5px;
+      border-radius: 14px;
+      font-size: 20px;
+      /* float: right; */
+      margin-left: 0%;
+      outline: none;
+      background-color: #e9e9ff;
+      
+
+    }
+    .container div span {
+      font-size: 25px;
+     display: block;
+    }
+
+
+
+    .container div .number {
+    
+      padding: 10px;
+      font-size: 20px;
+      border: none;
+      border-bottom: 2px solid;
+     
+      background-color: #e7efff;
+      border-radius: 19px;
+    }
+
+   
+
+    input{
+      width: 72%;
+      /* border: none; */
+      font-size: 20px;
+      border-bottom: 2px solid black;
+      /* float: right; */
+      border-radius: 8px;
+      text-align: center;
+      outline: none;
+      margin-left: 28%;
+    }
+
+    .Save {
+      background-color: white;
+      border-radius: 5px;
+      padding: 10px;
+      display: block;
+      position: relative;
+      cursor: pointer;
+      right: -32%;
+      width: 100px;
+      border: none;
+      font-size: 25px;
+      border-bottom: 2px solid red;
+      color: blue;
+    }
+    .Save:hover {
+        background-color: black;
+        color: crimson;
+    }
+
+
+/* reload page icon */
+    i {
+      width: 50px; 
+      height: 50px;
+      position: fixed;
+      top: 2%; right: 2%;
+      font-size: 20px;
+      cursor: pointer;
+      color: navy;
+
+    }
+
+    .meney_serials{
+      width: 300px;
+      height: 130px;
+      
+      background-color: #e4e4e49c;
+      color: #ff00e5;;
+      font-size: 15px;
+      position: absolute;
+      right: 11%;
+      top: 1%;
+      width: 27%;
+      display: none;
+      white-space: normal;
+      resize: none;
+      cursor: pointer;
+      text-align: center;
+      overflow: auto;  
+    }
+    .meney_serials:hover {
+      background-color: black; color: crimson;
+    }
+    /* .area_note{
+      position: absolute;
+      left: 0%;
+      top: 0%;
+    } */
+
+    /* .container .Code::after{
+      content: 'ss';
+      width: 300px;
+      height: 300px;
+      background-color: red;
+    } */
+    /* .meney_serials::after{
+      content: '';
+      width: 200px;
+      height: 50px;
+      position: absolute;
+      background-color: red;
+      color: white;
+      z-index: 2;
+      top: 0%;
+      right: 0%;
+    } */
+
+    .meney_serials::selection{
+      /* background-color: black;
+      color: red; */
+
+      background-color:  rgba(148, 0, 246 , 0.5);
+    }
+
+    @media (max-width : 880px) {
+  
+      .container div .characters {
+        font-size: 15px;
+        width: 100%;
+        margin-left: 0%;
+       }
+      .container .Code{
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        height: fit-content;
+        /* height: 84px; */
+        font-size: 15px;
+        
+
+      }
+
+      .container  .generate ,  .container .generate_many{
+        margin-top: 3%;
+        font-size: 15px;
+        line-height: 26px;
+        width: 50%;
+       
+      }
+      .container div span { 
+        font-size: 13px;
+      
+      }
+      .container div .number {
+        font-size: 15px;
+        margin-top: 15px;
+      
+      }
+      input{
+        font-size: 15px;
+        margin-left: 0%;
+        width: 100%;
+      }
+      .Save {
+        font-size: 15px;
+      }
+
+      img{
+        width: 20px; 
+        height: 20px;
+    
+      }
+
+      .note {
+        font-size: 14px;
+      }
+    }
+
+ @media ( max-width  : 890px)
+ {
+  .meney_serials{
+    bottom: 0%;
+    LEFT: 5%;
+    width: 92%;
+    font-size: 14px;
+    position: relative;
+    
+  }
+ }
+
+
+ .frm_container {
+  position: fixed;
+  z-index: 3;
+  left: 0%; top: 0%;
+  width: 100%;
+  height: 100%;
+  
+  /* background-color: red; */
+  /* background-color: rgba(33,3,3, 0.5); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+ }
+
+ .frm_container form {
+   background-color: #e2dae8;
+   height: 300px; width: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 10px;
+   border-radius: 20px;
+   /* position: absolute; */
+ }
+ .frm_container form  input { 
+   background-color: #ece1d2;
+   padding: 10px;
+   font-size: 20px;
+   width: 90%;
+   border: none;
+   border-bottom: 2px solid black;
+   border-radius: 20px;
+ }
+
+ .frm_container form  input:hover { 
+  border-bottom: 2px solid white;
+  background-color: black;
+  color: crimson;
+ }
+
+ .frm_container form  span {
+  background-color: rgb(165 168 201);
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  line-height: 32px;
+ }
+ .frm_container form  span:hover {
+  border-bottom: 2px solid white;
+  background-color: black;
+  color: crimson;
+ }
+ .frm_container form  h4 {
+  font-size: 20px;
+  color: navy;
+
+ }
+ .frm_container form .btn_cancel {
+  
+
+}
+
+.frm_container form .btn_ok {
+   
+}
+
+@media (max-width : 800px) {
+  .frm_container form { width: 90%;}
+  .frm_container form  h4 {
+    font-size: 15px;
+   }
+   .frm_container form  input {
+     font-size: 15px;
+    }
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: crimson;
+  opacity: 0.8; /* Firefox */
+}
+
+.blue::placeholder {
+  color: blue;
+}
